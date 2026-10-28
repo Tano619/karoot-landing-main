@@ -1,0 +1,24 @@
+# Karoot
+
+> Karoot is Toronto's one stop for pet grooming: pet parents find trusted groomers, see transparent prices, and book in minutes — all in one app. Built by pet parents, for pet parents.
+
+## What Karoot is
+
+- A pet grooming marketplace for Toronto, Canada. Pet parents book grooming; groomers run their own profile, prices, and schedule.
+- The Karoot app is available to download on the App Store and Google Play, and is rolling out across Toronto.
+- Payments are handled securely through Stripe, including escrow for bookings.
+- Groomers on Karoot include salon, in-home, and mobile groomers.
+
+## Links
+
+- Website: https://karoot.ca
+- Download page: https://karoot.ca/early-access
+- App Store: https://apps.apple.com/ca/app/karoot/id6782400685
+- Google Play: https://play.google.com/store/apps/details?id=com.karoot.android.app
+- Instagram: https://www.instagram.com/karoot.ca
+- LinkedIn: https://www.linkedin.com/company/karootcanada
+- Reddit: https://www.reddit.com/r/Karoot/
+
+## Optional
+
+- Founding groomers: Karoot's Founding 50 program recognizes early groomers on the platform with spotlights, community events, and featured placement. Founding 50 status is claimed after signing up in the app.

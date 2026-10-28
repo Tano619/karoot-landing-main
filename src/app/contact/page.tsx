@@ -27,36 +27,35 @@ export default function ContactPage() {
               Questions from pet owners and groomers are welcome.
             </h1>
             <p className="mt-5 text-lg leading-8 text-muted">
-              You can reach out to us with questions about the app launch, service areas, or where to find store links once Karoot is live.
-              Pet groomers can also ask about early access before launch.
+              You can reach out to us with questions about the app, service areas, or store links.
+              Pet groomers can also ask about getting started.
             </p>
           </div>
 
           <div className="mt-10 grid gap-5 md:grid-cols-2">
-            <article className="rounded-lg border border-line bg-white p-6 shadow-sm">
-              <span className="grid h-12 w-12 place-items-center rounded-lg bg-warm text-brand">
+            <article className="rounded-2xl border border-line bg-white p-6 shadow-sm">
+              <span className="grid h-12 w-12 place-items-center rounded-2xl bg-warm text-brand">
                 <PawPrint aria-hidden="true" className="h-6 w-6" />
               </span>
               <h2 className="mt-5 text-2xl font-bold text-ink">Pet owners</h2>
               <p className="mt-3 leading-7 text-muted">
-                Ask about the app launch, service areas, or where to find store links once
-                Karoot is live.
+                Ask about the app, service areas, or store links.
               </p>
             </article>
 
-            <article className="rounded-lg border border-line bg-white p-6 shadow-sm">
-              <span className="grid h-12 w-12 place-items-center rounded-lg bg-warm text-brand">
+            <article className="rounded-2xl border border-line bg-white p-6 shadow-sm">
+              <span className="grid h-12 w-12 place-items-center rounded-2xl bg-warm text-brand">
                 <Scissors aria-hidden="true" className="h-6 w-6" />
               </span>
               <h2 className="mt-5 text-2xl font-bold text-ink">Pet groomers</h2>
               <p className="mt-3 leading-7 text-muted">
-                Ask how to prepare for early access as a salon, in-home, mobile grooming,
+                Ask how to get started as a salon, in-home, mobile grooming,
                 or pet care provider.
               </p>
             </article>
           </div>
 
-          <div className="mt-10 rounded-lg bg-ink p-6 text-white sm:p-8">
+          <div className="mt-10 rounded-2xl bg-ink p-6 text-white sm:p-8">
             <p className="text-sm font-bold uppercase tracking-[0.18em] text-white/55">
               Email
             </p>

@@ -6,7 +6,7 @@ type KarootCatPhotoProps = {
 
 export function KarootCatPhoto({ priority = false }: KarootCatPhotoProps) {
   return (
-    <div className="relative aspect-[4/5] overflow-hidden rounded-lg border border-line bg-warm shadow-soft">
+    <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-line bg-warm shadow-soft">
       <Image
         src="/images/karoot-cat.jpg"
         alt="Karoot, the orange-and-white cat behind the brand name"

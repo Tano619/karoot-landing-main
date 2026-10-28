@@ -17,7 +17,7 @@ export default function PrivacyPage() {
     <>
       <SiteHeader />
       <main className="px-5 py-16 sm:py-20">
-        <article className="mx-auto max-w-3xl rounded-lg border border-line bg-white p-6 shadow-sm sm:p-10">
+        <article className="mx-auto max-w-3xl rounded-2xl border border-line bg-white p-6 shadow-sm sm:p-10">
           <p className="text-sm font-bold uppercase tracking-[0.18em] text-brand">
             Privacy Policy
           </p>
@@ -117,7 +117,7 @@ export default function PrivacyPage() {
           </div>
 
           <Link
-            className="mt-9 inline-flex min-h-12 items-center rounded-lg bg-brand px-5 py-3 text-sm font-semibold text-white transition hover:bg-brandHover"
+            className="mt-9 inline-flex min-h-12 items-center rounded-2xl bg-brand px-5 py-3 text-sm font-semibold text-white transition hover:bg-brandHover"
             href="/"
           >
             Back to home

@@ -28,6 +28,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: `${baseUrl}/contact`,
       lastModified: new Date()
+    },
+    {
+      url: `${baseUrl}/studios`,
+      lastModified: new Date()
+    },
+    {
+      url: `${baseUrl}/policies`,
+      lastModified: new Date()
     }
   ];
 }

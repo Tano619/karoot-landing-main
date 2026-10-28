@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Apple, Mail, PawPrint, Play } from "lucide-react";
+import Image from "next/image";
+import { Apple, Mail, Play } from "lucide-react";
 import { siteConfig } from "@/config/site";
 
 export function Footer() {
@@ -7,11 +8,14 @@ export function Footer() {
     <footer className="border-t border-line bg-ink text-white">
       <div className="mx-auto grid max-w-6xl gap-8 px-5 py-10 sm:grid-cols-[1.4fr_1fr_1fr]">
         <div>
-          <div className="flex items-center gap-2 text-lg font-bold">
-            <span className="grid h-9 w-9 place-items-center rounded-lg bg-brand text-white">
-              <PawPrint aria-hidden="true" className="h-5 w-5" />
-            </span>
-            {siteConfig.appName}
+          <div className="flex items-center">
+            <Image
+              src="/images/karoot-wordmark.png"
+              alt="Karoot"
+              width={432}
+              height={130}
+              className="h-8 w-auto"
+            />
           </div>
           <p className="mt-4 max-w-sm text-sm leading-6 text-white/70">
             {siteConfig.tagline}
@@ -33,10 +37,16 @@ export function Footer() {
               Contact
             </Link>
             <Link className="transition hover:text-softOrange" href="/early-access">
-              Early Access
+              Download
             </Link>
             <Link className="transition hover:text-softOrange" href="/faq">
               FAQ
+            </Link>
+            <Link className="transition hover:text-softOrange" href="/studios">
+              For Studios
+            </Link>
+            <Link className="transition hover:text-softOrange" href="/policies">
+              Policies
             </Link>
             <a className="transition hover:text-softOrange" href={siteConfig.storeLinks.appStore.href}>
               App Store
@@ -60,16 +70,16 @@ export function Footer() {
           </a>
           <div className="mt-5 flex gap-3 text-white/78">
             <a
-              className="grid h-10 w-10 place-items-center rounded-lg border border-white/15 transition hover:border-softOrange hover:text-softOrange"
+              className="grid h-10 w-10 place-items-center rounded-2xl border border-white/15 transition hover:border-softOrange hover:text-softOrange"
               href={siteConfig.storeLinks.appStore.href}
-              aria-label="App Store coming soon"
+              aria-label="App Store"
             >
               <Apple aria-hidden="true" className="h-5 w-5" />
             </a>
             <a
-              className="grid h-10 w-10 place-items-center rounded-lg border border-white/15 transition hover:border-softOrange hover:text-softOrange"
+              className="grid h-10 w-10 place-items-center rounded-2xl border border-white/15 transition hover:border-softOrange hover:text-softOrange"
               href={siteConfig.storeLinks.googlePlay.href}
-              aria-label="Google Play coming soon"
+              aria-label="Google Play"
             >
               <Play aria-hidden="true" className="h-5 w-5" />
             </a>

@@ -17,7 +17,7 @@ export function StoreButton({
 }: StoreButtonProps) {
   const content = (
     <>
-      <span className="grid h-9 w-9 place-items-center rounded-lg bg-ink text-white">
+      <span className="grid h-9 w-9 place-items-center rounded-2xl bg-ink text-white">
         <Icon aria-hidden="true" className="h-5 w-5" />
       </span>
       <span>
@@ -32,10 +32,10 @@ export function StoreButton({
   if (!isAvailable) {
     return (
       <span
-        className="inline-flex min-h-14 cursor-not-allowed items-center gap-3 rounded-lg border border-line bg-white/80 px-4 py-3 text-left opacity-70 shadow-sm"
+        className="inline-flex min-h-14 cursor-not-allowed items-center gap-3 rounded-2xl border border-line bg-white/80 px-4 py-3 text-left opacity-70 shadow-sm"
         role="link"
         aria-disabled="true"
-        aria-label={`${label} coming soon`}
+        aria-label={`${label} unavailable`}
       >
         {content}
       </span>
@@ -44,7 +44,7 @@ export function StoreButton({
 
   return (
     <a
-      className="inline-flex min-h-14 items-center gap-3 rounded-lg border border-line bg-white px-4 py-3 text-left shadow-sm transition hover:border-brand"
+      className="inline-flex min-h-14 items-center gap-3 rounded-2xl border border-line bg-white px-4 py-3 text-left shadow-sm transition hover:border-brand"
       href={href}
       aria-label={`${note} on ${label}`}
     >

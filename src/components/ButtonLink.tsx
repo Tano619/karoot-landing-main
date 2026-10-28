@@ -27,7 +27,7 @@ export function ButtonLink({
 }: ButtonLinkProps) {
   return (
     <a
-      className={`inline-flex min-h-12 items-center justify-center gap-2 rounded-lg px-5 py-3 text-sm font-semibold transition ${variantClasses[variant]} ${className}`}
+      className={`inline-flex min-h-12 items-center justify-center gap-2 rounded-2xl px-5 py-3 text-sm font-semibold transition ${variantClasses[variant]} ${className}`}
       href={href}
       rel={target === "_blank" ? "noopener noreferrer" : undefined}
       target={target}

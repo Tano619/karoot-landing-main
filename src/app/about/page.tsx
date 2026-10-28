@@ -8,10 +8,10 @@ import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "About Karoot | Pet Grooming Bookings Across Canada"
+    absolute: "About Karoot | Pet Grooming Bookings in Toronto"
   },
   description:
-    "Learn about Karoot, a Canada-wide pet grooming and care booking app for pet owners and groomers."
+    "Learn about Karoot, a pet grooming and care booking app for pet owners and groomers in Toronto."
 };
 
 export default function AboutPage() {
@@ -39,7 +39,7 @@ export default function AboutPage() {
                 care for their pets.
               </p>
               <p className="mt-4 text-lg leading-8 text-muted">
-                The app is being built for pet grooming and pet care bookings
+                The app is built for pet grooming and pet care bookings
                 across Canada, including services for dogs, cats, rabbits, and
                 other pets depending on what each pet groomer or care provider offers.
               </p>
@@ -53,8 +53,8 @@ export default function AboutPage() {
 
         <section className="bg-white px-5 py-16 sm:py-20">
           <div className="mx-auto grid max-w-6xl gap-5 md:grid-cols-3">
-            <article className="rounded-lg border border-line bg-warm p-6">
-              <span className="grid h-12 w-12 place-items-center rounded-lg bg-white text-brand">
+            <article className="rounded-2xl border border-line bg-warm p-6">
+              <span className="grid h-12 w-12 place-items-center rounded-2xl bg-white text-brand">
                 <PawPrint aria-hidden="true" className="h-6 w-6" />
               </span>
               <h2 className="mt-5 text-xl font-bold text-ink">Pet-first</h2>
@@ -64,19 +64,19 @@ export default function AboutPage() {
               </p>
             </article>
 
-            <article className="rounded-lg border border-line bg-warm p-6">
-              <span className="grid h-12 w-12 place-items-center rounded-lg bg-white text-brand">
+            <article className="rounded-2xl border border-line bg-warm p-6">
+              <span className="grid h-12 w-12 place-items-center rounded-2xl bg-white text-brand">
                 <HeartHandshake aria-hidden="true" className="h-6 w-6" />
               </span>
               <h2 className="mt-5 text-xl font-bold text-ink">Groomer-friendly</h2>
               <p className="mt-3 leading-7 text-muted">
                 Pet groomers and pet care providers can present their services clearly
-                and receive booking requests when Karoot launches.
+                and receive booking requests.
               </p>
             </article>
 
-            <article className="rounded-lg border border-line bg-warm p-6">
-              <span className="grid h-12 w-12 place-items-center rounded-lg bg-white text-brand">
+            <article className="rounded-2xl border border-line bg-warm p-6">
+              <span className="grid h-12 w-12 place-items-center rounded-2xl bg-white text-brand">
                 <Sparkles aria-hidden="true" className="h-6 w-6" />
               </span>
               <h2 className="mt-5 text-xl font-bold text-ink">Warm and simple</h2>
@@ -89,16 +89,16 @@ export default function AboutPage() {
         </section>
 
         <section className="px-5 py-16 sm:py-20">
-          <div className="mx-auto max-w-4xl rounded-lg border border-line bg-white p-8 text-center shadow-sm sm:p-10">
+          <div className="mx-auto max-w-4xl rounded-2xl border border-line bg-white p-8 text-center shadow-sm sm:p-10">
             <p className="text-sm font-bold uppercase tracking-[0.18em] text-brand">
-              Coming soon
+              Available to download
             </p>
             <h2 className="mt-3 text-3xl font-bold text-ink">
-              Pet grooming bookings across Canada.
+              Pet grooming bookings in Toronto.
             </h2>
             <p className="mt-4 leading-7 text-muted">
-              Karoot is still in development. App Store and
-              Google Play links will be updated when the app is launched.
+              Karoot is available to download on the App Store and
+              Google Play — and rolling out across Toronto in the coming weeks.
             </p>
             <ButtonLink
               href="/contact"

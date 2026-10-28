@@ -11,11 +11,12 @@ const config: Config = {
       colors: {
         warm: "#FFF7ED",
         blush: "#FFF1EB",
+        peach: "#FDEEE6",
         card: "#FFFFFF",
         ink: "#1F2933",
         muted: "#6B7280",
-        brand: "#FF5A3D",
-        brandHover: "#EA4A2A",
+        brand: "#FF6801",
+        brandHover: "#E05C01",
         softOrange: "#FFD8CA",
         line: "#F3E7DA"
       },

@@ -23,7 +23,7 @@ export default function FaqPage() {
               FAQ
             </p>
             <h1 className="mt-3 text-4xl font-black text-ink sm:text-5xl">
-              Answers before Karoot launches.
+              Answers about Karoot.
             </h1>
             <p className="mt-5 text-lg leading-8 text-muted">
               If you have a different question that isn't here, please reach out to us through the contact page.
@@ -33,11 +33,11 @@ export default function FaqPage() {
           <div className="mt-10 grid gap-4">
             {siteConfig.faq.map((item) => (
               <article
-                className="rounded-lg border border-line bg-white p-6 shadow-sm"
+                className="rounded-2xl border border-line bg-white p-6 shadow-sm"
                 key={item.question}
               >
                 <div className="flex gap-4">
-                  <span className="grid h-10 w-10 shrink-0 place-items-center rounded-lg bg-warm text-brand">
+                  <span className="grid h-10 w-10 shrink-0 place-items-center rounded-2xl bg-warm text-brand">
                     <HelpCircle aria-hidden="true" className="h-5 w-5" />
                   </span>
                   <div>

@@ -4,6 +4,7 @@ import {
   CalendarCheck,
   CheckCircle2,
   HelpCircle,
+  Mail,
   MapPin,
   PawPrint,
   Play,
@@ -27,10 +28,10 @@ const featureIcons = [MapPin, Store, UserRoundPlus, CalendarCheck, ShieldCheck];
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Karoot | Pet Grooming Bookings Across Canada"
+    absolute: "Karoot | Pet Grooming Bookings in Toronto"
   },
   description:
-    "Karoot helps pet owners find grooming services for dogs, cats, rabbits, and other pets across Canada."
+    "Karoot helps pet owners in Toronto find grooming services for dogs, cats, rabbits, and other pets."
 };
 
 export default function Home() {
@@ -41,7 +42,7 @@ export default function Home() {
         <section className="hero-backdrop border-b border-line">
           <div className="mx-auto grid max-w-6xl items-center gap-12 px-5 py-16 sm:py-20 lg:grid-cols-[1.05fr_0.95fr] lg:py-24">
             <div className="max-w-2xl">
-              <div className="inline-flex items-center gap-2 rounded-lg border border-line bg-white px-3 py-2 text-sm font-bold text-brand shadow-sm">
+              <div className="inline-flex items-center gap-2 rounded-2xl border border-line bg-white px-3 py-2 text-sm font-bold text-brand shadow-sm">
                 <Sparkles aria-hidden="true" className="h-4 w-4" />
                 {siteConfig.badge}
               </div>
@@ -77,33 +78,33 @@ export default function Home() {
         </section>
 
         <section id="waitlist" className="bg-white px-5 py-14 sm:py-16">
-          <div className="mx-auto max-w-6xl rounded-lg border border-line bg-warm p-6 shadow-sm sm:p-8">
+          <div className="mx-auto max-w-6xl rounded-2xl border border-line bg-warm p-6 shadow-sm sm:p-8">
             <div className="grid gap-7 md:grid-cols-[1.15fr_0.85fr] md:items-center">
               <div>
                 <p className="text-sm font-bold uppercase tracking-[0.18em] text-brand">
-                  Coming soon
+                  Get started
                 </p>
                 <h2 className="mt-3 text-3xl font-bold text-ink sm:text-4xl">
-                  Join the Karoot waitlist.
+                  Download Karoot.
                 </h2>
                 <p className="mt-4 max-w-2xl text-lg leading-8 text-muted">
-                  Be the first to know when Karoot launches in your area.
+                  Available on the App Store and Google Play — and rolling out
+                  across Toronto in the coming weeks.
                 </p>
               </div>
 
               <div className="grid gap-3 sm:grid-cols-2 md:grid-cols-1">
                 <ButtonLink
-                  href={siteConfig.waitlist.petOwnerUrl}
-                  icon={PawPrint}
-                  label="Join Pet Owner Waitlist"
+                  href={siteConfig.storeLinks.appStore.href}
+                  icon={Apple}
+                  label="Download on the App Store"
                   className="w-full"
                   target="_blank"
                 />
                 <ButtonLink
-                  href={siteConfig.waitlist.groomerUrl}
-                  icon={Scissors}
-                  label="Join Pet Groomer Waitlist"
-                  variant="secondary"
+                  href={siteConfig.storeLinks.googlePlay.href}
+                  icon={Play}
+                  label="Get it on Google Play"
                   className="w-full"
                   target="_blank"
                 />
@@ -123,7 +124,7 @@ export default function Home() {
             <div className="mt-10 grid gap-5 md:grid-cols-2">
               {siteConfig.howItWorks.map((item) => (
                 <article
-                  className="rounded-lg border border-line bg-white p-6 shadow-sm"
+                  className="rounded-2xl border border-line bg-white p-6 shadow-sm"
                   key={item.audience}
                 >
                   <p className="text-sm font-bold uppercase tracking-[0.16em] text-brand">
@@ -179,10 +180,10 @@ export default function Home() {
 
                 return (
                   <article
-                    className="rounded-lg border border-line bg-warm p-5"
+                    className="rounded-2xl border border-line bg-warm p-5"
                     key={feature}
                   >
-                    <span className="grid h-11 w-11 place-items-center rounded-lg bg-white text-brand">
+                    <span className="grid h-11 w-11 place-items-center rounded-2xl bg-white text-brand">
                       <Icon aria-hidden="true" className="h-5 w-5" />
                     </span>
                     <h3 className="mt-5 text-base font-bold leading-6 text-ink">
@@ -211,7 +212,7 @@ export default function Home() {
               <div className="mt-6 flex flex-wrap gap-3">
                 {siteConfig.serviceTypes.map((service) => (
                   <span
-                    className="inline-flex items-center gap-2 rounded-lg border border-line bg-white px-3 py-2 text-sm font-semibold text-ink shadow-sm"
+                    className="inline-flex items-center gap-2 rounded-2xl border border-line bg-white px-3 py-2 text-sm font-semibold text-ink shadow-sm"
                     key={service}
                   >
                     <CheckCircle2 aria-hidden="true" className="h-4 w-4 text-brand" />
@@ -221,14 +222,14 @@ export default function Home() {
               </div>
             </div>
 
-            <AppMockup />
+            <AppMockup variant="groomer" />
           </div>
         </section>
 
         <section className="grid md:grid-cols-2">
           <div id="groomers" className="bg-ink px-5 py-16 text-white sm:py-20">
             <div className="mx-auto max-w-lg md:mr-10">
-              <span className="grid h-12 w-12 place-items-center rounded-lg bg-brand text-white">
+              <span className="grid h-12 w-12 place-items-center rounded-2xl bg-brand text-white">
                 <Scissors aria-hidden="true" className="h-6 w-6" />
               </span>
               <h2 className="mt-6 text-3xl font-bold sm:text-4xl">
@@ -236,14 +237,14 @@ export default function Home() {
               </h2>
               <p className="mt-4 leading-7 text-white/74">
                 Offer salon, in-home, or mobile grooming, create your service profile,
-                and be ready to accept booking requests when Karoot launches.
+                and be ready to accept booking requests.
               </p>
             </div>
           </div>
 
           <div id="pet-owners" className="bg-warm px-5 py-16 sm:py-20">
             <div className="mx-auto max-w-lg md:ml-10">
-              <span className="grid h-12 w-12 place-items-center rounded-lg bg-white text-brand">
+              <span className="grid h-12 w-12 place-items-center rounded-2xl bg-white text-brand">
                 <PawPrint aria-hidden="true" className="h-6 w-6" />
               </span>
               <h2 className="mt-6 text-3xl font-bold text-ink sm:text-4xl">
@@ -257,17 +258,52 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="bg-warm px-5 py-16 sm:py-20">
+          <div className="mx-auto max-w-6xl rounded-2xl border border-line bg-white p-8 shadow-sm sm:p-10">
+            <div className="grid gap-8 md:grid-cols-[1.2fr_0.8fr] md:items-center">
+              <div>
+                <p className="text-sm font-bold uppercase tracking-[0.18em] text-brand">
+                  For studios · Coming soon
+                </p>
+                <h2 className="mt-3 text-3xl font-bold text-ink">
+                  Own a studio? One business profile, many groomers.
+                </h2>
+                <p className="mt-4 leading-7 text-muted">
+                  Soon, studio owners will be able to run one Karoot business
+                  profile with multiple groomer profiles under it — one place
+                  for your team, your services, and your bookings. Want in
+                  early? Talk to us and we'll set you up first.
+                </p>
+              </div>
+              <div className="flex flex-col gap-3 sm:flex-row md:flex-col">
+                <ButtonLink
+                  href={`mailto:${siteConfig.contactEmail}?subject=Karoot%20studio%20business%20profile`}
+                  icon={Mail}
+                  label="Contact Karoot about studios"
+                  className="w-full"
+                />
+                <ButtonLink
+                  href="/studios"
+                  label="Learn more"
+                  variant="secondary"
+                  className="w-full"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section className="bg-white px-5 py-16 sm:py-20">
           <div className="mx-auto max-w-6xl">
             <SectionHeader
               eyebrow="FAQ"
-              title="Quick answers before launch."
+              title="Quick answers."
             />
 
             <div className="mt-10 grid gap-4 md:grid-cols-2">
               {siteConfig.faq.slice(0, 4).map((item) => (
                 <article
-                  className="rounded-lg border border-line bg-warm p-6"
+                  className="rounded-2xl border border-line bg-warm p-6"
                   key={item.question}
                 >
                   <h3 className="text-lg font-bold text-ink">{item.question}</h3>
@@ -288,7 +324,7 @@ export default function Home() {
         </section>
 
         <section className="px-5 py-16 sm:py-20">
-          <div className="mx-auto max-w-6xl rounded-lg border border-line bg-white p-8 shadow-sm sm:p-10">
+          <div className="mx-auto max-w-6xl rounded-2xl border border-line bg-white p-8 shadow-sm sm:p-10">
             <div className="grid gap-8 md:grid-cols-[1.2fr_0.8fr] md:items-center">
               <div>
                 <p className="text-sm font-bold uppercase tracking-[0.18em] text-brand">
@@ -298,7 +334,7 @@ export default function Home() {
                   Have a question about Karoot?
                 </h2>
                 <p className="mt-4 leading-7 text-muted">
-                  Pet owners and groomers can reach out before launch. We will respond to inquiries about the app launch, service areas, and store links once Karoot is live.
+                  Pet owners and groomers can reach out any time. We will respond to inquiries about the app, service areas, and bookings.
                 </p>
               </div>
               <div className="flex flex-col gap-3 sm:flex-row md:flex-col">
