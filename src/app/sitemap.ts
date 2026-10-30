@@ -36,6 +36,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: `${baseUrl}/policies`,
       lastModified: new Date()
+    },
+    {
+      url: `${baseUrl}/groomer-onboarding`,
+      lastModified: new Date()
     }
   ];
 }

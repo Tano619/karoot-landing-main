@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { Apple, PawPrint, Play, Scissors, ShieldCheck } from "lucide-react";
+import Link from "next/link";
+import { Apple, ArrowRight, PawPrint, Play, Scissors, ShieldCheck } from "lucide-react";
 import { ButtonLink } from "@/components/ButtonLink";
 import { Footer } from "@/components/Footer";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -55,6 +56,13 @@ export default function EarlyAccessPage() {
               <p className="mt-3 leading-7 text-muted">
                 For service providers who want to offer grooming services through Karoot.
               </p>
+              <Link
+                className="mt-4 inline-flex items-center gap-1 font-semibold text-brand hover:underline"
+                href="/groomer-onboarding"
+              >
+                See the signup steps
+                <ArrowRight aria-hidden="true" className="h-4 w-4" />
+              </Link>
             </article>
           </div>
         </section>

@@ -45,6 +45,9 @@ export function Footer() {
             <Link className="transition hover:text-softOrange" href="/studios">
               For Studios
             </Link>
+            <Link className="transition hover:text-softOrange" href="/groomer-onboarding">
+              For Groomers
+            </Link>
             <Link className="transition hover:text-softOrange" href="/policies">
               Policies
             </Link>

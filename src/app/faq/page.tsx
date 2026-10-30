@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { HelpCircle } from "lucide-react";
+import Link from "next/link";
+import { ArrowRight, HelpCircle } from "lucide-react";
 import { Footer } from "@/components/Footer";
 import { SiteHeader } from "@/components/SiteHeader";
 import { siteConfig } from "@/config/site";
@@ -43,6 +44,15 @@ export default function FaqPage() {
                   <div>
                     <h2 className="text-xl font-bold text-ink">{item.question}</h2>
                     <p className="mt-3 leading-7 text-muted">{item.answer}</p>
+                    {"link" in item && item.link ? (
+                      <Link
+                        className="mt-3 inline-flex items-center gap-1 font-semibold text-brand hover:underline"
+                        href={item.link.href}
+                      >
+                        {item.link.label}
+                        <ArrowRight aria-hidden="true" className="h-4 w-4" />
+                      </Link>
+                    ) : null}
                   </div>
                 </div>
               </article>

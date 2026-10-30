@@ -26,6 +26,9 @@ export function SiteHeader() {
           <Link className="transition hover:text-brand" href="/studios">
             Studios
           </Link>
+          <Link className="transition hover:text-brand" href="/groomer-onboarding">
+            For Groomers
+          </Link>
           <Link className="transition hover:text-brand" href="/early-access">
             Download
           </Link>

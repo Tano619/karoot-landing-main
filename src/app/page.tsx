@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import {
   Apple,
+  ArrowRight,
   CalendarCheck,
   CheckCircle2,
   HelpCircle,
@@ -132,6 +134,15 @@ export default function Home() {
                   </p>
                   <h3 className="mt-3 text-2xl font-bold text-ink">{item.title}</h3>
                   <p className="mt-3 leading-7 text-muted">{item.description}</p>
+                  {"link" in item && item.link ? (
+                    <Link
+                      className="mt-4 inline-flex items-center gap-1 font-semibold text-brand hover:underline"
+                      href={item.link.href}
+                    >
+                      {item.link.label}
+                      <ArrowRight aria-hidden="true" className="h-4 w-4" />
+                    </Link>
+                  ) : null}
                 </article>
               ))}
             </div>
@@ -239,6 +250,13 @@ export default function Home() {
                 Offer salon, in-home, or mobile grooming, create your service profile,
                 and be ready to accept booking requests.
               </p>
+              <Link
+                className="mt-5 inline-flex items-center gap-1 font-semibold text-white underline-offset-2 hover:underline"
+                href="/groomer-onboarding"
+              >
+                See how signing up works
+                <ArrowRight aria-hidden="true" className="h-4 w-4" />
+              </Link>
             </div>
           </div>
 

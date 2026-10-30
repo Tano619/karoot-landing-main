@@ -41,7 +41,11 @@ export const siteConfig = {
       audience: "Pet Groomers",
       title: "Create, list, receive",
       description:
-        "Build your profile, list salon, in-home, or mobile pet grooming services, and receive booking requests. Your chair, your prices, your schedule."
+        "Build your profile, list salon, in-home, or mobile pet grooming services, and receive booking requests. Your chair, your prices, your schedule.",
+      link: {
+        label: "See how to sign up as a groomer",
+        href: "/groomer-onboarding"
+      }
     }
   ],
   serviceTypes: ["Salon grooming", "In-home grooming", "Mobile grooming"],
@@ -86,7 +90,11 @@ export const siteConfig = {
     {
       question: "How can pet groomers get early access?",
       answer:
-        "Pet groomers can download the app to get started, or use the contact email on this website to ask about early access."
+        "Pet groomers can download the app to get started, or use the contact email on this website to ask about early access.",
+      link: {
+        label: "See the signup steps",
+        href: "/groomer-onboarding"
+      }
     },
     {
       question: "Is Karoot only for dogs?",
